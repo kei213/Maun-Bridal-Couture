@@ -1,1 +1,1 @@
-A static website for Maun Bridal couture using HTML, CSS and Javascript
+A static website for Maun Bridal Couture using HTML, CSS and Javascript
