@@ -84,6 +84,27 @@ header .navbar a:hover{
 	
 }
 
+.home {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	color: #222435;
+	display: flex;
+	align-items: center;
+	background-color: var(--bg-color);
+	background: url(img/main-image-comp70.jpg) no-repeat;
+	background-size: 100% 125%;
+	background-position: center;
+}
+
+.home-text {
+	max-width: 500px;
+}
+
+.home-text h1 {
+	font-size: var(--h1-font);
+	letter-spacing: var(--spacing);
+}
 @media (max-width: 768px) {
 	#menu-icon {
 		display: initial;
@@ -100,7 +121,7 @@ header .navbar a:hover{
 		text-align: center;
 		background: var(--bg-color);
 		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-		transition: 0.7s ease;
+		transition: 0.6s ease;
 	}
 
 	header .navbar.active {
