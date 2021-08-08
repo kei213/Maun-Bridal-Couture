@@ -89,4 +89,31 @@ header .navbar a:hover{
 		display: initial;
 		color: #222435;
 	}
+
+	header .navbar {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		background: var(--bg-color);
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+		transition: 0.7s ease;
+	}
+
+	header .navbar.active {
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+
+	.navbar a {
+		margin: 1rem;
+		padding: 1.5rem;
+		display: block;
+		background: #fff;
+		border-left: 4px solid #222435;
+	}
 }
+
+
