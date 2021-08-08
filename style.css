@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	text-transform: capitalize;
 	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth
 }
 
 :root {
@@ -11,12 +19,74 @@
 	--hover: #008170;
 
 	/* Fonts */
-	--h1-font: ;
-	--h2-font: ;
-	--p-font: ;
-	--spacing: ;
+	--h1-font: 2.2rem ;
+	--h2-font: 1.1rem;
+	--p-font: 0.9rem ;
+	--spacing: 1px;
 
 	/* Margins */
-	--m-1: ;
-	--m-4: ;
+	--m-1: 0.4rem;
+	--m-4: 2rem;
+}
+
+html {
+	background: #1c2834;
+	color: #fff;
+}
+
+section {
+	padding: 50px 100px;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: var(--bg-color);
+	padding: 18px 100px;
+	box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
+
+}
+
+.logo {
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	color: var(--primary);
+}
+
+.navbar {
+	display: flex;
+}
+
+.navbar a {
+	font-size: 1rem;
+	padding: 10px 20px;
+	color: #222435;
+	font-weight: 500;
+}
+
+header .navbar a:hover{
+	background: var(--primary) /*#1c2834*/;
+	color: #fff;
+}
+
+#menu-icon {
+	font-size: 1.65rem;
+	cursor: pointer;
+	display: none;
+	
+}
+
+@media (max-width: 768px) {
+	#menu-icon {
+		display: initial;
+		color: #222435;
+	}
 }
