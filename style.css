@@ -30,13 +30,10 @@
 }
 
 html {
-	background: #1c2834;
+	background: #1c2834 /*#fff*/;
 	color: #fff;
 }
 
-section {
-	padding: 50px 100px;
-}
 
 header {
 	position: fixed;
@@ -48,7 +45,7 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	background: var(--bg-color);
-	padding: 18px 100px;
+	padding: 18px 85px;
 	box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
 
 }
@@ -61,6 +58,12 @@ header {
 	color: var(--primary);
 }
 
+.header-icons {
+
+	font-size: 1.26rem;
+	color: #8c9195;
+}
+
 .navbar {
 	display: flex;
 }
@@ -68,7 +71,7 @@ header {
 .navbar a {
 	font-size: 1rem;
 	padding: 10px 20px;
-	color: #222435;
+	color: /*#222435*/ #8c9195;
 	font-weight: 500;
 }
 
@@ -84,21 +87,33 @@ header .navbar a:hover{
 	
 }
 
+section {
+	padding: 50px 85px;
+}
+
 .home {
 	position: relative;
 	width: 100%;
+
 	min-height: 100vh;
 	color: #222435;
 	display: flex;
-	align-items: center;
-	background-color: var(--bg-color);
-	background: url(img/main-image-comp70.jpg) no-repeat;
-	background-size: 100% 125%;
-	background-position: center;
+	align-items: center;	
+	
+	background: url(img/rex-way-cylcICfV7Bs-unsplash.jpg) no-repeat;
+	background-color: #fff;
+    background-size: 91% 99.9%;
+    background-position: center;
+
+    
+}
+
+.home-image {
+
 }
 
 .home-text {
-	max-width: 500px;
+	max-width: 450px;
 }
 
 .home-text h1 {
