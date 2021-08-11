@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
 
 * {
 	margin: 0;
@@ -10,6 +11,18 @@
 	text-transform: capitalize;
 	font-family: 'Poppins', sans-serif;
 	scroll-behavior: smooth
+}
+
+body::-webkit-scrollbar {
+	width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+	background: #2c3e50;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: var(--primary);
 }
 
 :root {
@@ -44,19 +57,20 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background: var(--bg-color);
-	padding: 18px 67px;
+	background: var(--bg-color) /*#272a37*/;
+	padding: 4px 67px;
 	box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
 	border-bottom: 1px solid #8f9499;
 
 }
 
 .logo {
-	text-transform: uppercase;
-	font-size: 1.4rem;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
-	color: var(--primary);
+	/*text-transform: uppercase;*/
+	font-size: 2.4rem;
+	/*font-family: 'Montserrat', sans-serif;*/
+	font-family: 'Style Script', cursive;
+	//font-weight: 600;
+	color: /*var(--primary)*/ #222435;
 }
 
 .header-icons {
@@ -89,7 +103,7 @@ header .navbar a:hover{
 }
 
 section {
-	padding: 50px 85px;
+	padding: 45px 85px;
 }
 
 .home {
@@ -140,7 +154,61 @@ section {
 	color: #fff;
 }
 
+.btn:hover {
+	background: var(--hover);
+}
 
+.about {
+	width: 100%;
+	min-height: 84vh;
+	display: flex;
+	align-items: center:
+	justify-content: space-between;
+}
+
+.about-img {
+	width: 500px;
+	height: 400px;
+}
+
+.about-img img {
+    width: 300px;
+    height: 450px;
+    /*width:100%;*/
+    /*height: 100%;*/
+    border: 4px solid #8c9195;
+    /*object-fit: contain;*/
+    /*object-position: ;*/
+    margin-left: 85px;
+}
+
+.about-text {
+	max-width: 500px;
+}
+
+.about-text h2 {
+    font-size: var(--h2-font);
+    color: var(--primary);
+}
+
+.about-text h1 {
+	font-size: var(--h1-font);
+	font-weight: 600;
+}
+
+.about-text p {
+	font-size: var(--p-font);
+	margin: 1rem 0 var(--m-4);
+	text-align: justify;
+	font-weight: 300;
+}
+
+.about-btn {
+	padding: 10px 22px;
+	background: transparent;
+	color: var(--primary);
+	border: 1px solid var(--primary) ;
+}
 
 @media (max-width: 768px) {
 	#menu-icon {
