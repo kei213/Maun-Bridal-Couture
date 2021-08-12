@@ -242,7 +242,7 @@ section {
 	background: #1c2834;
 	color: #fff;
 	max-width: 320px;
-	padding: 10px 20px;
+	padding: 8px 20px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -253,6 +253,8 @@ section {
 	font-weight: 600;
 	text-align: center;
 	margin: 1rem 0;
+	/*background: #272a37;*/
+	/*color: #8c9195 ;*/
 }
 
 .products-text p {
@@ -284,12 +286,14 @@ section {
 }
 
 .location-img img {
-	width: 50%;
-	height: 50%;	
-	float: right;
 	position: relative;
+	width: 47%;
+	height: 47%;	
+	float: right;	
     top: 50%;
     transform: translateY(-30%);
+    border-radius: 2px solid var(--primary);
+
 }
 
 
