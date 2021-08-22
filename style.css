@@ -213,18 +213,18 @@ section {
 .products {
 	width: 100%;
 	min-height: 100vh;
-	background: var(--bg-color) /*#272a37*/;;
+	background: var(--bg-color) /*#272a37*/;
 	color: #222435;
 }
 
-.heading {
+.products-heading {
 	display: flex;
 	justify-content: center;
 	padding: 1.4rem 0;
 	margin-top: -23px;
 }
 
-.heading h1 {
+.products-heading h1 {
 	font-size: var(--h1-font);
 	font-weight: 600;
 	border-bottom: 2px solid var(--primary);
@@ -277,23 +277,51 @@ section {
 .location {	   
 	width: 100%;
 	min-height: 100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 
+}
+
+.location-map {
+    width: 100%;
+    padding: 10px;
+}
+
+.location-map-text h2 {
+	font-size: var(--h2-font);
+    color: var(--primary);
+}
+
+#map {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
 }
 
 .location-img {
     /*max-height:200px;*/
     overflow:hidden;
+    height: 50%;
+    width: 100%;
+    margin-top: 2.0rem;
+    padding: 10px;
 }
 
 .location-img img {
 	position: relative;
-	width: 47%;
-	height: 47%;	
+	width: 100%;
+	height: 100%;	
 	float: right;	
     top: 50%;
     transform: translateY(-30%);
     border-radius: 2px solid var(--primary);
 
+}
+
+.footer {
+	background: var(--bg-color) /*#272a37*/;
+	color: #222435;
 }
 
 

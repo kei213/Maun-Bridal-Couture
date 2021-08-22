@@ -9,6 +9,9 @@
     <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
 
     <link rel = "stylesheet" href = "style.css">
+    <!--Mapbox-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
     <!-- Font Awesome -->
     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Maun Bridal Couture</title>     
@@ -59,7 +62,7 @@
 
     <!--Products and services-->
     <section class = "products" id = "products">
-    	<div class = "heading">
+    	<div class = "products-heading">
     		<h1>Products and Services</h1>
     	</div>
 
@@ -111,12 +114,25 @@
     	</div>
     </section>
 
-    <section>
-    	<div class = "location">
+    <section class = "location">    	
+            <div class = "location-map">
+                <div class = "location-map-text">
+                    <h2>Location</h2>
+                    <p>Country: Botswana</p>
+                    <p>Town: Maun</p>
+                    <p>Location: Plot 698 Old Mall Maun, next to CEDA office</p>
+                </div>
+                <div id='map'></div>
+            </div>
     		<div class = "location-img">
     			<img src = "img/l-steward-masweneng-YIpfN7VFaqM-unsplash.jpg" alt = "">
-    		</div>
-    	</div>
+    		</div>    	
+    </section>
+
+    <section class = "footer">
+        <div>
+            
+        </div>
     </section>
 
 
