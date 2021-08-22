@@ -103,7 +103,7 @@ header .navbar a:hover{
 }
 
 section {
-	padding: 45px 85px;
+	padding: 35px 85px;
 }
 
 .home {
@@ -221,7 +221,7 @@ section {
 	display: flex;
 	justify-content: center;
 	padding: 1.4rem 0;
-	margin-top: -23px;
+	margin-top: -30px;
 }
 
 .products-heading h1 {
@@ -239,13 +239,14 @@ section {
 }
 
 .products-bars {
-	background: #1c2834;
-	color: #fff;
+	background: var(--bg-color) /*#1c2834*/;
+	/*color: #fff;*/
 	max-width: 320px;
 	padding: 8px 20px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	border: 1px solid #1c2834;
 	border-radius: 5px;
 }
 
@@ -255,6 +256,7 @@ section {
 	margin: 1rem 0;
 	/*background: #272a37;*/
 	/*color: #8c9195 ;*/
+	border-bottom: 1px solid #222435;
 }
 
 .products-text p {
